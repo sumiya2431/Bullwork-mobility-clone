@@ -50,7 +50,7 @@ const OrderForm = ({ userId = 1, cartItems = [] }) => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/orders/place-order", {
+      const res = await fetch("https://bullwork-mobility-clone.onrender.com/orders/place-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderPayload),
