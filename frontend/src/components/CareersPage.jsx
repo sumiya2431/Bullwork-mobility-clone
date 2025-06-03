@@ -6,7 +6,7 @@ const CareersPage = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/jobs") 
+    axios.get("https://bullwork-mobility-clone.onrender.com/jobs") 
       .then(res => setJobs(res.data))
       .catch(err => console.error("Failed to fetch jobs", err));
   }, []);
