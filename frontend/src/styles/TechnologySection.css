@@ -1,0 +1,140 @@
+.tech-section {
+  background-color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.tech-image-full img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.tab-content {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.tech-video {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.rounded-video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.control-section {
+  padding: 60px 20px;
+}
+
+.control-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.control-section.reverse .control-container {
+  flex-direction: row-reverse;
+}
+
+.control-text {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.control-image {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.control-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+.carousel-wrapper {
+  margin: 60px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.carousel-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.carousel-description {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.carousel-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
