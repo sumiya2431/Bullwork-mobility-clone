@@ -11,7 +11,7 @@ const ProductsSection = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://bullwork-mobility-clone.onrender.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
