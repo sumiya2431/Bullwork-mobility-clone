@@ -3,6 +3,7 @@ const pool = require("../config/db");
 exports.placeOrder = async (req, res) => {
   const {
     user_id,
+    customer_type,
     products,
     name,
     phone_number,
@@ -20,15 +21,15 @@ exports.placeOrder = async (req, res) => {
 
   try {
     const query = `
-      INSERT INTO ordersw (
+      INSERT INTO orderstable (
         user_id, products, name, phone_number, email,
         address, country, state, city, pincode,
-        aadhar_number, pan_number, select_product, message
+        aadhar_number, pan_number, select_product, message, customer_type
       )
       VALUES (
         $1, $2, $3, $4, $5,
         $6, $7, $8, $9, $10,
-        $11, $12, $13, $14
+        $11, $12, $13, $14, $15
       )
       RETURNING *;
     `;
@@ -48,6 +49,7 @@ exports.placeOrder = async (req, res) => {
       pan_number,
       select_product,
       message,
+      customer_type,
     ];
 
     const result = await pool.query(query, values);
